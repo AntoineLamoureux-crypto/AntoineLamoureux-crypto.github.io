@@ -1,0 +1,48 @@
+#tableStyle {
+    box-shadow: 5px 5px 5px;
+    border-left: 5px solid red;
+    padding-bottom: 10px;
+}
+#navStyle {
+    box-shadow: 5px 5px 5px black;
+}
+body {
+    background: url(../IMG/backIndex.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-link:hover {
+    background-color: #f7bf3b;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#title {
+    font-weight: bold;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 -10px red;
+    }
+    40% {
+        box-shadow: 0 0 20px red;
+    }
+    60% {
+        box-shadow: 0 0 20px red;
+    }
+    100% {
+        box-shadow: 0 0 -10px red;
+    }
+}
+
+.button-glow {
+    animation: glowing 2000ms infinite;
+}
+#shadow {
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}

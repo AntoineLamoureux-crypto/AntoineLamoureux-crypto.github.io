@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>TP1-WEB</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <!-- image icon du site Boostrap -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="IMG/logo.ico.ico"
+            style="border-radius: 50%"
+        />
+        <link rel="stylesheet" href="CSS/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src=JS/script1.js></script>
+    </head>
+    <body>
+        <!-- Début NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navTP1"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div
+                class="collapse navbar-collapse justify-content-between"
+                id="navTP1"
+            >
+                <div class="container-fluid fixed-top">
+                    <div class="row" id="navTP1">
+                        <!-- Sidebar -->
+                        <div class="sidebar" id="navStyle">
+                            <div id="title" class="text-center">
+                                <i
+                                    class="fas fa-stroopwafel fa-spin fa-2x mt-3"
+                                ></i>
+                                <a href="" class="navbar-brand ml-2"
+                                    >TP-01 Inc.</a
+                                >
+                            </div>
+                            <hr />
+                            <div>
+                                <img
+                                    src="IMG/logo.ico.ico"
+                                    class="rounded-circle ml-3 mr-2"
+                                    alt=""
+                                    width="50px"
+                                />
+                                <a href="" class="text-light mr-4"
+                                    >Antoine Lamoureux</a
+                                >
+                            </div>
+                            <hr />
+                            <ul class="navbar-nav flex-column mt-4 p-2 mb-3">
+                                <li class="nav-item p-2 ">
+                                    <a href="" class="nav-link text-white"
+                                        ><i class="fas fa-home fa-lg mr-3"></i>
+                                        Tableau de bord</a
+                                    >
+                                </li>
+                                <li class="nav-item p-2 mb-3 sidebar-link">
+                                    <a href="" class="nav-link text-white"
+                                        ><i class="fas fa-user fa-lg mr-3"></i>
+                                        Profile</a
+                                    >
+                                </li>
+                                <li class="nav-item p-2 mb-3 sidebar-link">
+                                    <a href="" class="nav-link text-white"
+                                        ><i id="items"
+                                            class="fas fa-wrench fa-lg mr-3"
+                                        ></i>
+                                        Configuration</a
+                                    >
+                                </li>
+                                <li class="nav-item p-2 mb-3 sidebar-link">
+                                    <a href="" class="nav-link text-white"
+                                        ><i id="items"
+                                            class="fas fa-envelope fa-lg mr-3"
+                                        ></i>
+                                        Inbox</a
+                                    >
+                                </li>
+                                <li class="nav-item p-2 mb-3 sidebar-link">
+                                    <a href="" class="nav-link text-white"
+                                        ><i class="fas fa-table fa-lg mr-3"></i>
+                                        Tableaux</a
+                                    >
+                                </li>
+                                <li class="nav-item p-2 mb-3 sidebar-link">
+                                    <a href="" class="nav-link text-white"
+                                        ><i
+                                            class="fas fa-shopping-cart fa-lg mr-3" 
+                                        ></i>
+                                        Ventes</a
+                                    >
+                                </li>
+                                <li class="nav-item p-2 mb-3 sidebar-link">
+                                    <a href="" class="nav-link text-white"
+                                        ><i
+                                            class="fas fa-chart-line fa-lg mr-3"
+                                        ></i>
+                                        Statistiques</a
+                                    >
+                                </li>
+                                <li class="nav-item p-2 mb-3 sidebar-link">
+                                    <a href="" class="nav-link text-white"
+                                        ><i
+                                            class="fas fa-chart-bar fa-lg mr-3"
+                                        ></i>
+                                        Graphes</a
+                                    >
+                                </li>
+                                <li class="nav-item p-2 mb-3 sidebar-link">
+                                    <a href="" class="nav-link text-white"
+                                        ><i
+                                            class="fas fa-file-alt fa-lg mr-3"
+                                        ></i>
+                                        Documentation</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin NAVBAR -->
+
+        <section>
+            <!-- Obj 3-->
+            <div class="container-fluid">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row pt-md-5 mt-md-3 mb-5">
+                        <!-- Card -->
+                        <div class="col-xl-3 col-sm-6 p2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i
+                                            class="fas fa-shopping-cart fa-3x text-warning"
+                                        ></i>
+                                        <div class="text-right text-between">
+                                            <h5>Ventes</h5>
+                                            <h3>150,000$</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync fa-spin mr-3"></i>
+                                    <span>Update Now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Card -->
+                        <!-- Card -->
+                        <div class="col-xl-3 col-sm-6 p2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i
+                                            class="fas fa-money-bill-wave fa-3x text-success"
+                                        ></i>
+                                        <div class="text-right text-between">
+                                            <h5>Dépenses</h5>
+                                            <h3>48,00$</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync fa-spin mr-3"></i>
+                                    <span>Update Now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Card -->
+                        <!-- Card -->
+                        <div class="col-xl-3 col-sm-6 p2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i
+                                            class="fas fa-users fa-3x text-primary"
+                                        ></i>
+                                        <div class="text-right text-between">
+                                            <h5>Clients</h5>
+                                            <h3>120,000</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync fa-spin mr-3"></i>
+                                    <span>Update Now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Card -->
+                        <!-- Card -->
+                        <div class="col-xl-3 col-sm-6 p2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i
+                                            class="fas fa-chart-line fa-3x text-danger"
+                                        ></i>
+                                        <div class="text-right text-between">
+                                            <h5>Visiteurs</h5>
+                                            <h3>73,00</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync fa-spin mr-3"></i>
+                                    <span>Update Now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Obj4 -->
+            <div class="container-fluid">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row">
+                        <div class="table-responsive col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <h3 class="text-center">Staff Salary</h3>
+                            <table
+                                class="table table-striped bg-light text-center"
+                                id="shadow"
+                            >
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Salaire</th>
+                                        <th scope="col">Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-info btn-sm"
+                                            >
+                                                Message
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-info btn-sm"
+                                            >
+                                                Message
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-info btn-sm"
+                                            >
+                                                Message
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-info btn-sm"
+                                            >
+                                                Message
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-info btn-sm"
+                                            >
+                                                Message
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- Début de la pagination-->
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a
+                                            class="page-link"
+                                            href="#"
+                                            aria-label="Previous"
+                                        >
+                                            <span aria-hidden="true"
+                                                >&laquo;</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a
+                                            class="page-link"
+                                            href="#"
+                                            aria-label="Next"
+                                        >
+                                            <span aria-hidden="true"
+                                                >&raquo;</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- Fin de la pagination-->
+                        </div>
+                        <div class="table-responsive col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <h3 class="text-center text-between">Recent Payments</h3>
+                            <table
+                                class="table table-dark text-center"
+                                id="shadow"
+                            >
+                                <thead>
+                                    <tr class="text-secondary">
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Salaire</th>
+                                        <th scope="col">Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-danger btn-sm button-glow"
+                                            >
+                                                En Attente
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success btn-sm"
+                                            >
+                                                Approuvé
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success btn-sm"
+                                            >
+                                                Approuvé
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-danger btn-sm button-glow"
+                                            >
+                                                En Attente
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-danger btn-sm button-glow"
+                                            >
+                                                En Attente
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success btn-sm"
+                                            >
+                                                Approuvé
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- Début de la pagination-->
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"
+                                            >Previous</a
+                                        >
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- Fin de la pagination-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Obj4 -->
+            <div class="container-fluid">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto col-sm-12 col-xs-1">
+                    <div class="row">
+                        <div class="table-responsive col-md-6">
+                            <div
+                                class="bg-dark text-white p-4 rounded mt-5"
+                                id="navStyle"
+                            >
+                                <h4 class="mb-5">
+                                    Sondage Language de Programmation
+                                </h4>
+                                <h6 class="mb-3">JAVA-J2EE</h6>
+                                <div class="progress mb-4" style="height: 20px">
+                                    <div
+                                        class="progress-bar progress-bar-striped font-weight-bold"
+                                        style="width: 95%"
+                                    >
+                                        95%
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-3">ANGULAR 10</h6>
+                                <div class="progress mb-4" style="height: 20px">
+                                    <div
+                                        class="progress-bar progress-bar-striped font-weight-bold bg-success"
+                                        style="width: 80%"
+                                    >
+                                        80%
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-3">REACT</h6>
+                                <div class="progress mb-4" style="height: 20px">
+                                    <div
+                                        class="progress-bar progress-bar-striped font-weight-bold bg-danger"
+                                        style="width: 70%"
+                                    >
+                                        70%
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-3">PHP</h6>
+                                <div class="progress mb-4" style="height: 20px">
+                                    <div
+                                        class="progress-bar progress-bar-striped font-weight-bold bg-info"
+                                        style="width: 10%"
+                                    >
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tableau des taches -->
+                        <div class="table-responsive col-md-6">
+                            <h3 class="mb-3 text-white">Tasks :</h3>
+                            <table class="table table-striped bg-light">
+                                <tbody>
+                                    <tr id="tableStyle">
+                                        <th>
+                                            <input
+                                                type="checkbox"
+                                                aria-label="Checkbox for following text input"
+                                                checked
+                                            />
+                                        </th>
+                                        <td>Lorem ipsum dolor sit amet.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <th>
+                                            <i
+                                                class="far fa-edit fa-2x text-success"
+                                            ></i>
+                                            <i
+                                                class="fas fa-minus-circle fa-2x text-danger"
+                                            >
+                                            </i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-striped bg-light">
+                                <tbody>
+                                    <tr id="tableStyle">
+                                        <th>
+                                            <input
+                                                type="checkbox"
+                                                aria-label="Checkbox for following text input"
+                                                checked
+                                            />
+                                        </th>
+                                        <td>Lorem ipsum dolor sit amet.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <th>
+                                            <i
+                                                class="far fa-edit fa-2x text-success"
+                                            ></i>
+                                            <i
+                                                class="fas fa-minus-circle fa-2x text-danger"
+                                            >
+                                            </i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-striped bg-light">
+                                <tbody>
+                                    <tr id="tableStyle">
+                                        <th>
+                                            <input
+                                                type="checkbox"
+                                                aria-label="Checkbox for following text input"
+                                                checked
+                                            />
+                                        </th>
+                                        <td>Lorem ipsum dolor sit amet.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <th>
+                                            <i
+                                                class="far fa-edit fa-2x text-success"
+                                            ></i>
+                                            <i
+                                                class="fas fa-minus-circle fa-2x text-danger"
+                                            >
+                                            </i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-striped bg-light">
+                                <tbody>
+                                    <tr id="tableStyle">
+                                        <th>
+                                            <input
+                                                type="checkbox"
+                                                aria-label="Checkbox for following text input"
+                                                checked
+                                            />
+                                        </th>
+                                        <td>Lorem ipsum dolor sit amet.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <th>
+                                            <i
+                                                class="far fa-edit fa-2x text-success"
+                                            ></i>
+                                            <i
+                                                class="fas fa-minus-circle fa-2x text-danger"
+                                            >
+                                            </i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-striped bg-light">
+                                <tbody>
+                                    <tr id="tableStyle">
+                                        <th>
+                                            <input
+                                                type="checkbox"
+                                                aria-label="Checkbox for following text input"
+                                                checked
+                                            />
+                                        </th>
+                                        <td>Lorem ipsum dolor sit amet.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <th>
+                                            <i
+                                                class="far fa-edit fa-2x text-success"
+                                            ></i>
+                                            <i
+                                                class="fas fa-minus-circle fa-2x text-danger"
+                                            >
+                                            </i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-striped bg-light">
+                                <tbody>
+                                    <tr id="tableStyle">
+                                        <th>
+                                            <input
+                                                type="checkbox"
+                                                aria-label="Checkbox for following text input"
+                                                checked
+                                            />
+                                        </th>
+                                        <td>Lorem ipsum dolor sit amet.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <th>
+                                            <i
+                                                class="far fa-edit fa-2x text-success"
+                                            ></i>
+                                            <i
+                                                class="fas fa-minus-circle fa-2x text-danger"
+                                            >
+                                            </i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Obj 5 -->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                        <div class="row mb-4 ml-2 align-items-center">
+                            <!-- Début du tableau des taches -->
+
+                            <!-- Fin du tableau des taches -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Footer -->
+            <div class="container-fluid" id="footer">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                        <div class="row border-top-pt-3">
+                            <div class="col-lg-6 text-center">
+                                <ul class="list-inline p-3">
+                                    <li class="list-inline-item mr-2">
+                                        <a href="#" class="text-light"
+                                            >TP01-420-345-AL</a
+                                        >
+                                    </li>
+                                    <li class="list-inline-item mr-2">
+                                        <a href="#" class="text-light">About</a>
+                                    </li>
+                                    <li class="list-inline-item mr-2">
+                                        <a href="#" class="text-light"
+                                            >Support</a
+                                        >
+                                    </li>
+                                    <li class="list-inline-item mr-2">
+                                        <a href="#" class="text-light">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 text-center p-3 text-light">
+                                <p>
+                                    &copy; 2020 Copyright. Made with
+                                    <i class="fas fa-heart text-danger"></i> by
+                                    <span class="text-success">A.L</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
